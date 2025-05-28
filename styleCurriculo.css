@@ -19,7 +19,7 @@ html {
 
 .centralizar {
     min-height: 100vh;
-     align-items: center;
+    align-items: center;
 }
 
 #titulo1 {
@@ -112,7 +112,7 @@ footer img{
 
 body {
     background-image: radial-gradient(700px 500px at center, #031D40, #01113e, #000);
-      overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 main {
@@ -140,11 +140,10 @@ main {
     gap: 1rem;
     list-style: none;
     padding: 0;
+   
 }
 
-footer{
-    margin-bottom: 20px;
-}
+
 
 .lista-lateral button {
     margin-bottom: 10px;
@@ -157,7 +156,7 @@ footer{
     font-weight: 600;
     transition: all 0.5s;
     cursor: pointer;
-    line-height: 50px;
+    line-height: 45px;
     padding: 10px 15px;
 }
 
@@ -174,11 +173,11 @@ footer{
     max-width: 200px;
     display: block;
     margin: auto;
-    height: 190px;
+    height: 180px;
     width: auto;
     border-radius: 10%;
     min-width: 100px;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 20px;
     backdrop-filter: blur(10px);
     border: 15px solid rgba(255, 255, 255, 0.1);
@@ -451,7 +450,11 @@ h3 {
     }
 
     #github{
+<<<<<<< HEAD
         margin-top: 20px;
+=======
+        margin-bottom: 20px;
+>>>>>>> 5a0f48bf31447c23178da4279165ad3033cc9e82
     }
 
     .formacao {
