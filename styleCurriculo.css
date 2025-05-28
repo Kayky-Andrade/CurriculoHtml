@@ -19,7 +19,7 @@ html {
 
 .centralizar {
     min-height: 100vh;
-     align-items: center;
+    align-items: center;
 }
 
 #titulo1 {
@@ -73,7 +73,7 @@ header {
 }
 
 footer img{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     height: 60px;
     width: 60px;
 }
@@ -85,7 +85,7 @@ footer img{
 
 body {
     background-image: radial-gradient(700px 500px at center, #031D40, #01113e, #000);
-      overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 main {
@@ -113,6 +113,7 @@ main {
     gap: 1rem;
     list-style: none;
     padding: 0;
+   
 }
 
 
@@ -128,7 +129,7 @@ main {
     font-weight: 600;
     transition: all 0.5s;
     cursor: pointer;
-    line-height: 50px;
+    line-height: 45px;
     padding: 10px 15px;
 }
 
@@ -145,11 +146,11 @@ main {
     max-width: 200px;
     display: block;
     margin: auto;
-    height: 190px;
+    height: 180px;
     width: auto;
     border-radius: 10%;
     min-width: 100px;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 20px;
     backdrop-filter: blur(10px);
     border: 15px solid rgba(255, 255, 255, 0.1);
