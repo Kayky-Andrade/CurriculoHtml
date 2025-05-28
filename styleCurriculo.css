@@ -50,6 +50,33 @@ header {
     display: none;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000;
+    transition: all 0.4s;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #00aaff;
+    border-radius: 10px;
+     box-shadow:  0 0 10px #00aaff,
+                  0 0 20px #00aaff,
+                  0 0 30px #00ffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00eeff;
+  transform: translateX(10px);
+}
+
+::-webkit-scrollbar-track:hover{
+    background-color: #181818;
+    
+}
+
 .navegacao-lateral {
     position: fixed;
     top: 0;
@@ -69,6 +96,18 @@ header {
 .navegacao‑lateral footer {
     padding: 1rem;
     text-align: center;
+    display: flex;
+}
+
+footer img{
+    margin-bottom: 40px;
+    height: 60px;
+    width: 60px;
+}
+
+#github{
+    height: 50px;
+    width: 50px;
 }
 
 body {
@@ -258,7 +297,6 @@ h3 {
   top: -120px; 
   left: 50%;
   transform: translateX(-50%);
-  
   background-color: #000;
   padding: 5px;
   border-radius: 8px;
@@ -324,11 +362,26 @@ h3 {
     font-weight: bold;
 }
 
+
+@media (max-width: 450px){
+
+    .bloco{
+        width: 80px;
+        height: 80px;
+    }
+    .bloco p{
+        font-size: 13px;
+    }
+}
+
+
+
+
 @media(max-width: 511px) {
 
 
     .navegacao-lateral {
-        display: none;
+        
         position: absolute;
         top: 0;
         left: 0;
@@ -341,7 +394,6 @@ h3 {
 
     .bloco {
         height: 115px;
-
     }
 
     .bloco img {
@@ -396,6 +448,10 @@ h3 {
 
     #linkedin {
         margin-bottom: 20px;
+    }
+
+    #github{
+        margin-top: 20px;
     }
 
     .formacao {
