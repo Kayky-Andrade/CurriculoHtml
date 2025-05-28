@@ -69,6 +69,18 @@ header {
 .navegacao‑lateral footer {
     padding: 1rem;
     text-align: center;
+    display: flex;
+}
+
+footer img{
+    margin-bottom: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+#github{
+    height: 50px;
+    width: 50px;
 }
 
 body {
@@ -103,9 +115,7 @@ main {
     padding: 0;
 }
 
-footer{
-    margin-bottom: 20px;
-}
+
 
 .lista-lateral button {
     margin-bottom: 10px;
@@ -395,6 +405,10 @@ h3 {
     }
 
     #linkedin {
+        margin-bottom: 20px;
+    }
+
+    #github{
         margin-bottom: 20px;
     }
 
