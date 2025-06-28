@@ -54,3 +54,25 @@ function mostrarCertificado() {
     }
     window.addEventListener("scroll", updateActiveButton);
     window.addEventListener("DOMContentLoaded", updateActiveButton);
+
+//Atualizações para comportamento do wow.js no código
+
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  
+  window.addEventListener("pageshow", () => {
+    window.scrollTo(0, 0);
+  });
+
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      new WOW().init();
+    }, 100); 
+  });
+
+  setTimeout(() => {
+  wow.sync(); 
+}, 500);
