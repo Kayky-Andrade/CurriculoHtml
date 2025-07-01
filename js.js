@@ -76,3 +76,34 @@ function mostrarCertificado() {
   setTimeout(() => {
   wow.sync(); 
 }, 500);
+
+//========================================================================
+
+//botão de som
+
+const audio = document.getElementById("aurora");
+const toggleBtn = document.getElementById("audioBotao");
+const barras = document.getElementById("barras");
+
+let isPlaying = false;
+
+toggleBtn.addEventListener("click", () => {
+  if(isPlaying) {
+    audio.pause();
+    barras.classList.remove("animando");
+    barras.classList.add("parando");
+    setTimeout(() => {
+      barras.classList.remove("parando");
+    }, 800);
+  }else{
+    audio.play();
+    barras.classList.remove("parando");
+    barras.classList.add("animando");
+    toggleBtn.style.backgroundColor = "rgb(255, 255, 255)";
+    audio.volume = 0.5;
+  }
+  isPlaying = !isPlaying;
+})
+
+
+//===================================================================
