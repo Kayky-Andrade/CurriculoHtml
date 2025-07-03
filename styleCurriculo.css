@@ -20,7 +20,7 @@ html {
 /* teste do trilha de carreira */
 .container-time-line {
     position: relative;
-    margin: 60px auto;
+    
     width: 90%;
     max-width: 1000px;
 }
@@ -295,7 +295,7 @@ html {
 #titulo4 {
     margin-top: 70px;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 header {
