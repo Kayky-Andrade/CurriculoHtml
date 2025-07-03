@@ -60,7 +60,7 @@ function mostrarCertificado() {
   if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
   }
-
+ 
   
   window.addEventListener("pageshow", () => {
     window.scrollTo(0, 0);
@@ -75,7 +75,7 @@ function mostrarCertificado() {
 
   setTimeout(() => {
   wow.sync(); 
-}, 500);
+}, 500); 
 
 //========================================================================
 
