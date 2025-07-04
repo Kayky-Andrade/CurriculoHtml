@@ -20,6 +20,10 @@ html {
   visibility: hidden;
 }
 
+.animate__animated.animate__fadeInRight {
+  animation-iteration-count: 1;
+}
+
 /* ========================================================================== */
 /* teste do trilha de carreira */
 .container-time-line {
