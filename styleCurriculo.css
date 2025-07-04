@@ -16,6 +16,10 @@ html {
     zoom: 95%;
 }
 
+.wow {
+  visibility: hidden;
+}
+
 /* ========================================================================== */
 /* teste do trilha de carreira */
 .container-time-line {
