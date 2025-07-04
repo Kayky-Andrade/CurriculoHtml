@@ -107,3 +107,35 @@ toggleBtn.addEventListener("click", () => {
 
 
 //===================================================================
+
+// SideBar para celular
+
+document.addEventListener("DOMContentLoaded", function () {
+  const btnToggleSidebar = document.getElementById("btnToggleSidebar");
+  const navLateral = document.getElementById("navegacaolateral");
+  const botoesMenu = document.querySelectorAll(".navegacao-lateral button");
+
+  btnToggleSidebar.addEventListener("click", (e) => {
+    navLateral.classList.add("open");
+    btnToggleSidebar.classList.add("hidden");
+    e.stopPropagation(); 
+  });
+
+  document.addEventListener("click", function (e) {
+    const clicouFora =
+      !navLateral.contains(e.target) &&
+      !btnToggleSidebar.contains(e.target);
+
+    if (clicouFora && navLateral.classList.contains("open")) {
+      navLateral.classList.remove("open");
+      btnToggleSidebar.classList.remove("hidden");
+    }
+  });
+
+  botoesMenu.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      navLateral.classList.remove("open");
+      btnToggleSidebar.classList.remove("hidden");
+    });
+  });
+});
