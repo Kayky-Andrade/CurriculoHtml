@@ -796,8 +796,8 @@ h3 {
     font-size: 15px;
   }
   .wow {
-    visibility: visible !important;
-    animation: none !important;
+    visibility: visible;
+    animation: none;
   }
   .lado-a-lado h3 {
     font-size: 18px;
